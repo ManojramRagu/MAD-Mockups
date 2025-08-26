@@ -9,7 +9,7 @@ class ProfileSettingsPage extends StatelessWidget {
       appBar: AppBar(),
       body: SingleChildScrollView(),
       bottomNavigationBar: NavigationBar(
-        selectedIndex: 5,
+        selectedIndex: 4,
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home_outlined), label: ''),
           NavigationDestination(icon: Icon(Icons.swap_vert), label: ''),
