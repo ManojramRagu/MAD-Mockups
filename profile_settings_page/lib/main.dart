@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
-import 'screens/ProfileSettingsPage.dart';
+import 'screens/profile_settings_screen.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: const ProfileSettingsPage());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Profile Settings',
+      theme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: const Color(0xFF4F6EF7),
+        scaffoldBackgroundColor: const Color(0xFFF5F7FB),
+      ),
+      home: const ProfileSettingsScreen(),
+    );
   }
 }
